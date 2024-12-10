@@ -19,12 +19,15 @@ enum class HeroState{
 class Hero : public Object
 {
 public:
-    void init();
+    //*-------*
+    // szc 12/11  新增Role Select STATE 
+    void init(int role_id);
     void update();
     void draw();
 private:
     HeroState state = HeroState::FRONT;
     double speed = 5;
+    double HP = 100;
     std::map<HeroState, std::string> gifPath;
 };
 
