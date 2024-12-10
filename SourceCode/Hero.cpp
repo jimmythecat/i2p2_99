@@ -13,7 +13,20 @@ namespace HeroSetting {
 	};
 }
 
-void Hero::init(){
+void Hero::init(int role_id){
+    //*-------*
+    // szc 12/11  新增Role Select STATE 
+    if(role_id == 1) {
+        speed = 5;
+        HP = 100; // 角色 1 設置的屬性
+    } else if(role_id == 2) {
+        speed = 7;
+        HP = 80; // 角色 2 設置的屬性
+    } else if(role_id == 3) {
+        speed = 3;
+        HP = 150; // 角色 3 設置的屬性
+    }
+    //*-------*
     //把圖片讀進來
     for(size_t type = 0; type < static_cast<size_t>(HeroState::HEROSTATE_MAX); ++type){
         //static_cast:強制轉型 size_t是本程式定義的 unsigned ll
