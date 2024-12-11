@@ -5,8 +5,6 @@
 #include "../monsters/Monster.h"
 #include "../towers/Tower.h"
 #include "../towers/Bullet.h"
-#include "../character.h"
-
 // fixed settings
 namespace DataSetting {
 	constexpr double FPS = 60;
@@ -27,10 +25,6 @@ DataCenter::DataCenter() {
 	memset(prev_mouse_state, false, sizeof(prev_mouse_state));
 	player = new Player();
 	level = new Level();
-	Shey = new SHEY();
-	Gym = new GYM();
-	Don = new DON();
-	
 }
 
 DataCenter::~DataCenter() {

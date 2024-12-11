@@ -12,9 +12,9 @@ class Level;
 class Monster;
 class Tower;
 class Bullet;
-class SHEY;
-class GYM;
-class DON;
+//Revise Start ----
+class Hero;
+//Revise End ----
 
 /**
  * @brief Stores generic global data and relatively small data structures.
@@ -80,6 +80,9 @@ public:
 	 * @see Level
 	 */
 	Level *level;
+
+	Hero *hero;
+
 	/**
 	 * @brief Raw list of Monster objects.
 	 * @see Monster
@@ -95,9 +98,6 @@ public:
 	 * @see Bullet
 	 */
 	std::vector<Bullet*> towerBullets;
-	SHEY *Shey;
-	GYM *Gym;
-	DON *Don;
 private:
 	DataCenter();
 };
