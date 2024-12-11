@@ -10,3 +10,4 @@ szc
 &emsp;&emsp;Game::game::update  裡面的case state::role select待更新!!  
 &emsp;&emsp;Game::game_draw()  
 &emsp;3.Hero.h和Hero.cpp  
+12/11 修正DC->Hero的錯誤
